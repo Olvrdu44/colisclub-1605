@@ -75,6 +75,20 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-geolocation.geolocation",
+    "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "clobbers": [
+      "navigator.geolocation"
+    ]
+  },
+  {
+    "id": "cordova-plugin-geolocation.PositionError",
+    "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "runs": true
+  },
+  {
     "id": "cordova-plugin-googlemaps.BaseClass",
     "file": "plugins/cordova-plugin-googlemaps/www/BaseClass.js",
     "pluginId": "cordova-plugin-googlemaps",
@@ -285,20 +299,6 @@ module.exports = [
     "clobbers": [
       "plugin.google.maps"
     ]
-  },
-  {
-    "id": "cordova-plugin-geolocation.geolocation",
-    "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
-    "pluginId": "cordova-plugin-geolocation",
-    "clobbers": [
-      "navigator.geolocation"
-    ]
-  },
-  {
-    "id": "cordova-plugin-geolocation.PositionError",
-    "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
-    "pluginId": "cordova-plugin-geolocation",
-    "runs": true
   }
 ];
 module.exports.metadata = 
@@ -309,8 +309,8 @@ module.exports.metadata =
   "cordova-plugin-network-information": "2.0.1",
   "cordova-plugin-inappbrowser": "3.0.0",
   "cordova-plugin-camera": "4.0.3",
-  "cordova-plugin-googlemaps": "2.3.1",
-  "cordova-plugin-geolocation": "4.0.1"
+  "cordova-plugin-geolocation": "4.0.1",
+  "cordova-plugin-googlemaps": "2.3.1"
 };
 // BOTTOM OF METADATA
 });

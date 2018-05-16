@@ -29,6 +29,10 @@
               "count": 1
             },
             {
+              "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.Geolocation\" /></feature>",
+              "count": 1
+            },
+            {
               "xml": "<feature name=\"CordovaGoogleMaps\"><param name=\"android-package\" value=\"plugin.google.maps.CordovaGoogleMaps\" /><param name=\"onload\" value=\"true\" /><param name=\"onreset\" value=\"true\" /></feature>",
               "count": 1
             },
@@ -82,10 +86,6 @@
             },
             {
               "xml": "<feature name=\"StreetViewPanorama\"><param name=\"android-package\" value=\"plugin.google.maps.PluginStreetViewPanorama\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.Geolocation\" /></feature>",
               "count": 1
             }
           ]
@@ -199,13 +199,13 @@
     "cordova-plugin-camera": {
       "PACKAGE_NAME": "fr.rainetcom.colisclub"
     },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "fr.rainetcom.colisclub"
+    },
     "cordova-plugin-googlemaps": {
       "API_KEY_FOR_ANDROID": "AIzaSyDI9IqV1J3MutLrIUU4g6TACjyxzLllUb8",
       "PLAY_SERVICES_VERSION": "15.0.1",
       "ANDROID_SUPPORT_V4_VERSION": "26.1.0",
-      "PACKAGE_NAME": "fr.rainetcom.colisclub"
-    },
-    "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "fr.rainetcom.colisclub"
     }
   },
@@ -284,6 +284,20 @@
       "clobbers": [
         "CameraPopoverHandle"
       ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.geolocation",
+      "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+        "navigator.geolocation"
+      ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.PositionError",
+      "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "runs": true
     },
     {
       "id": "cordova-plugin-googlemaps.BaseClass",
@@ -496,20 +510,6 @@
       "clobbers": [
         "plugin.google.maps"
       ]
-    },
-    {
-      "id": "cordova-plugin-geolocation.geolocation",
-      "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
-      "pluginId": "cordova-plugin-geolocation",
-      "clobbers": [
-        "navigator.geolocation"
-      ]
-    },
-    {
-      "id": "cordova-plugin-geolocation.PositionError",
-      "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
-      "pluginId": "cordova-plugin-geolocation",
-      "runs": true
     }
   ],
   "plugin_metadata": {
@@ -518,7 +518,7 @@
     "cordova-plugin-network-information": "2.0.1",
     "cordova-plugin-inappbrowser": "3.0.0",
     "cordova-plugin-camera": "4.0.3",
-    "cordova-plugin-googlemaps": "2.3.1",
-    "cordova-plugin-geolocation": "4.0.1"
+    "cordova-plugin-geolocation": "4.0.1",
+    "cordova-plugin-googlemaps": "2.3.1"
   }
 }

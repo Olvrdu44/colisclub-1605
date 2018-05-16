@@ -22,13 +22,13 @@
     "cordova-plugin-camera": {
       "PACKAGE_NAME": "fr.rainetcom.colisclub"
     },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "fr.rainetcom.colisclub"
+    },
     "cordova-plugin-googlemaps": {
       "API_KEY_FOR_ANDROID": "AIzaSyDI9IqV1J3MutLrIUU4g6TACjyxzLllUb8",
       "PLAY_SERVICES_VERSION": "15.0.1",
       "ANDROID_SUPPORT_V4_VERSION": "26.1.0",
-      "PACKAGE_NAME": "fr.rainetcom.colisclub"
-    },
-    "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "fr.rainetcom.colisclub"
     }
   },

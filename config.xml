@@ -64,6 +64,6 @@
         <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="L'application colis club a besoin d'accéder au gps afin de vous géolocaliser et de vous proposer les courses autour de vous" />
         <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="L'application colis club a besoin d'accéder au gps afin de vous géolocaliser et de vous proposer les courses autour de vous !" />
     </plugin>
-	<preference name="android-minSdkVersion" value="16" />
-	<preference name="android-targetSdkVersion" value="16" />
+	<preference name="android-minSdkVersion" value="19" />
+	<preference name="android-targetSdkVersion" value="27" />
 </widget>

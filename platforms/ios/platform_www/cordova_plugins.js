@@ -97,6 +97,14 @@ module.exports = [
     "clobbers": [
       "navigator.geolocation"
     ]
+  },
+  {
+    "id": "onesignal-cordova-plugin.OneSignal",
+    "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+    "pluginId": "onesignal-cordova-plugin",
+    "clobbers": [
+      "OneSignal"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -107,7 +115,8 @@ module.exports.metadata =
   "cordova-plugin-network-information": "2.0.1",
   "cordova-plugin-inappbrowser": "3.0.0",
   "cordova-plugin-camera": "4.0.3",
-  "cordova-plugin-geolocation": "4.0.1"
+  "cordova-plugin-geolocation": "4.0.1",
+  "onesignal-cordova-plugin": "2.4.0"
 };
 // BOTTOM OF METADATA
 });

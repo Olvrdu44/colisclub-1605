@@ -31,6 +31,7 @@
 		E4A82365BE734D55B90C4E69 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259FD3F3919A4480AD8EF730 /* CoreLocation.framework */; };
 		F600A059C2A5473A8DEEF718 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEE634567CF4710BFEBF4E2 /* AVFoundation.framework */; };
 		C5169546856A4680AF9FD076 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C0C784007A4E519AEE4BC3 /* CDVLocation.m */; };
+		AABB926337E64A5996A2395D /* OneSignalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3756C904590E4A8B9EEFB618 /* OneSignalPush.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		ADEE634567CF4710BFEBF4E2 /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		73C0C784007A4E519AEE4BC3 /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		1AA13AE40CCC490D8CEEF810 /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3756C904590E4A8B9EEFB618 /* OneSignalPush.m */ = {isa = PBXFileReference; name = "OneSignalPush.m"; path = "onesignal-cordova-plugin/OneSignalPush.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6ED486CE9D1B45AAB74B86BC /* OneSignalPush.h */ = {isa = PBXFileReference; name = "OneSignalPush.h"; path = "onesignal-cordova-plugin/OneSignalPush.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +231,8 @@
 				E18C92ECB5D34E7FB1CE0108 /* CDVExif.h */,
 				73C0C784007A4E519AEE4BC3 /* CDVLocation.m */,
 				1AA13AE40CCC490D8CEEF810 /* CDVLocation.h */,
+				3756C904590E4A8B9EEFB618 /* OneSignalPush.m */,
+				6ED486CE9D1B45AAB74B86BC /* OneSignalPush.h */,
 			);
 			name = Plugins;
 			path = "ColisClub/Plugins";
@@ -349,6 +354,7 @@
 				D34FABD037C3499AB82C1F67 /* CDVCamera.m in Sources */,
 				A18283CCC20B478D9506A236 /* CDVJpegHeaderWriter.m in Sources */,
 				C5169546856A4680AF9FD076 /* CDVLocation.m in Sources */,
+				AABB926337E64A5996A2395D /* OneSignalPush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

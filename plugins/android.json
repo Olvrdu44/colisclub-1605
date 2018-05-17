@@ -7,22 +7,25 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
+    "cordova-plugin-camera": {
       "PACKAGE_NAME": "fr.rainetcom.colisclub"
     },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "fr.rainetcom.colisclub"
     },
-    "cordova-plugin-network-information": {
+    "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "fr.rainetcom.colisclub"
     },
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "fr.rainetcom.colisclub"
     },
-    "cordova-plugin-camera": {
+    "cordova-plugin-network-information": {
       "PACKAGE_NAME": "fr.rainetcom.colisclub"
     },
-    "cordova-plugin-geolocation": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "fr.rainetcom.colisclub"
+    },
+    "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "fr.rainetcom.colisclub"
     },
     "cordova-plugin-googlemaps": {

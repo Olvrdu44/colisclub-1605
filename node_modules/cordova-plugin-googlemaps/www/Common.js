@@ -697,6 +697,24 @@ function hashCode(text) {
   return hash;
 }
 
+function createEvent(eventName, properties) {
+  var evt;
+  if (typeof CustomEvent === 'function') {
+    evt = new CustomEvent(eventName, {
+      bubbles: true,
+      detail: properties || null
+    });
+  } else {
+    evt = document.createEvent('Event');
+    evt.initEvent(eventName, true, false);
+    Object.keys(properties).forEach(function(key) {
+      if (!(key in properties)) {
+        evt[key] = properties[key];
+      }
+    });
+  }
+  return evt;
+}
 
 module.exports = {
     _clearInternalCache: _clearInternalCache,
@@ -719,7 +737,8 @@ module.exports = {
     quickfilter: quickfilter,
     nextTick: nextTick,
     getPluginDomId: getPluginDomId,
-    hashCode: hashCode
+    hashCode: hashCode,
+    createEvent: createEvent
 };
 
 if (cordova && cordova.platformId === "browser") {

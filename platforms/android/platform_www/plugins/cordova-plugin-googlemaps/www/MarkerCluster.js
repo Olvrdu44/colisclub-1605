@@ -1094,7 +1094,8 @@ MarkerCluster.prototype.getClusterIcon = function(cluster) {
 MarkerCluster.prototype._createMarker = function(markerOpts) {
   var markerId = markerOpts.__pgmId;
   var self = this;
-  var marker = new Marker(self.getMap(), markerOpts, "MarkerCluster", exec, {
+  var marker = new Marker(self.getMap(), markerOpts, exec, {
+    className: "MarkerCluster",
     id: self.id + "-" + markerId
   });
   marker._privateInitialize(markerOpts);

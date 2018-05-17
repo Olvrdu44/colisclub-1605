@@ -212,9 +212,9 @@ Map.prototype.getMap = function(meta, div, options) {
         div = div.parentNode;
       }
     }
-    cordova.fireDocumentEvent("plugin_touch", {
-      force: true
-    });
+    // cordova.fireDocumentEvent("plugin_touch", {
+    //   force: true
+    // });
 
     //------------------------------------------------------------------------
     // In order to work map.getVisibleRegion() correctly, wait a little.

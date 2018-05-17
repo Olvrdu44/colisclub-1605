@@ -14,19 +14,19 @@
     ]
   ],
   "_from": "cordova-plugin-googlemaps@latest",
-  "_id": "cordova-plugin-googlemaps@2.3.1",
+  "_id": "cordova-plugin-googlemaps@2.3.3",
   "_inCache": true,
   "_location": "/cordova-plugin-googlemaps",
-  "_nodeVersion": "5.4.1",
+  "_nodeVersion": "7.10.0",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/cordova-plugin-googlemaps_2.3.1_1526086122741_0.7600004374261053"
+    "tmp": "tmp/cordova-plugin-googlemaps_2.3.3_1526536334654_0.481242731075173"
   },
   "_npmUser": {
     "name": "wf9a5m75",
     "email": "wf9a5m75@gmail.com"
   },
-  "_npmVersion": "3.3.12",
+  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
     "raw": "cordova-plugin-googlemaps",
@@ -41,8 +41,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-googlemaps/-/cordova-plugin-googlemaps-2.3.1.tgz",
-  "_shasum": "4fed75ad63651832ad4b6d58727f80baea88ebfa",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-googlemaps/-/cordova-plugin-googlemaps-2.3.3.tgz",
+  "_shasum": "6c4ed4fa6a8be798130f2f5193560db6fd688310",
   "_shrinkwrap": null,
   "_spec": "cordova-plugin-googlemaps",
   "_where": "C:\\Users\\olvrd\\Desktop\\colisclub1605\\colisclub",
@@ -67,11 +67,11 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "4fed75ad63651832ad4b6d58727f80baea88ebfa",
-    "tarball": "https://registry.npmjs.org/cordova-plugin-googlemaps/-/cordova-plugin-googlemaps-2.3.1.tgz",
+    "shasum": "6c4ed4fa6a8be798130f2f5193560db6fd688310",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-googlemaps/-/cordova-plugin-googlemaps-2.3.3.tgz",
     "fileCount": 188,
-    "unpackedSize": 4657312,
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa9jnsCRA9TVsSAnZWagAA6aIP/0UOiqzRjHLrLmuB7+h5\nqowDysvd9iXPQnuKKVfSSM0H17h5qJxaDorudfYv+sX8r+bva7xIC9vzfRTh\nW1d0RLEhssd/YavJ4hGxf+OlHvZnN9NeIL2jjqfbbkKClzdWndO4nfyNDQa8\nbGjHOYEcgwhmORki6V3dzDeNVrOdRGlZgvKv2iPfzWf3fNTrt4Tgfc+ED5fw\nukpWOYkJtYiXn0Bm4DVV8ozjiwzb2nEgnQPq66TO1RfcmHjQ68ncFxpzT4fq\nKDRwSWc+GtG0TLvN2zrW5UcrC7v8Gk1RYPISF3Hz2NUbHsOxSQeIPG+l9288\nqwWrUoz6v956BCZ9TIjU3J/2nOlo3cPNcbo1MwXVZuKvPvUB9pahxYa4Bm1F\nx12wpjAZYSfLe46yEEVAxqaRmeXdfjOU4K5+WFLUmJctbBWGNu5hHbDBXLB3\n12Nva9EuXGX15YmPYZ387CUGRjE7KzqAs3fU8cQPMYRutLA3s2fMtYoZLq8X\ndWgJokMRUSptVjrzafDpKmoPajg/iMKNd1ua6mNsWzKr/XZA79qmTuaae/ce\novhvcaH9XP3t2B/qXS9EVR0vb/7N9n4GBrYj3+H8Ks/f49RmyIKCkxW0926V\nem86MYpNC07wyZH85ZltfdESf/fo5jkiCpxXZmO25nerW+2PZ5CvXtt/qpvp\noxND\r\n=a7eV\r\n-----END PGP SIGNATURE-----\r\n"
+    "unpackedSize": 4661116,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa/RiPCRA9TVsSAnZWagAA78oP/1Xjlql8+8fS0lWs+Pzl\n3UtCSCoos4cpA4vHb+3SCTgGv6Sqkg2DHY7IlTenXpGr3f2CXYenbwuYg+At\ncPIxUtSUAhWWZB/f8TaWje3zue4YaIzEeDOfyjSjyHugKcV8qgE0TuZhL2KK\na4+Hhzf5P5ScvGPlGdXukuLdztv1QG1dlKpbCzRKpf6mfYHuSwXKmrcCemjh\nYQMx2U3CP4/iMRXsT0YaGOsmKNAr7nLtcnlDC1jN6NZfuIzz6K4CDCGbiczl\n93UITnQxwcy2i9Z1xc/DNnq+7sde11gFe7iegy8oinsbh4rHsSWJy9XE0BiQ\nSkmOLotzcOS3THk+YQgkIArIfnzN4iEhZbG0U8RNgJHix2nPd3K8/EcW/uba\nnp0c5xxg+qfiKzObLpR32l3kpND0lIS5qeFIrxNLXyGSL+UkfiN1Eu/eFox1\ni+fIXSe/pLvNO0koGDarZ1Ao0P5cCN/FvYxD/IY3I5yzsGwciEZ/2kuUThGq\nyZeR8sJOI4FTYTZmdHQzWUogIN+R7oFK7FuPdnOd9vPC0Sonu3xkCb9o1wHC\nq7UafAOJ/m+DrZMIyhNPNMY4ukEEtqN6mjMuUupAC9mj9tM1Vejkkm6F2A/6\nknfQhhQuGKiO2w+XtBIaV3IQ7+mSMZyYteQSkxDxCUb0ppf9oS0cipWg56sE\nJIFt\r\n=CrTE\r\n-----END PGP SIGNATURE-----\r\n"
   },
   "engines": [
     {
@@ -91,7 +91,7 @@
       "version": ">=10.0.0"
     }
   ],
-  "gitHead": "72c7dc217f1d19b2d0b9fce547f833bc77efb424",
+  "gitHead": "e937c65cc090aaaedc9ebc2026b3a1fe4884077b",
   "homepage": "https://github.com/mapsplugin/cordova-plugin-googlemaps",
   "keywords": [
     "google",
@@ -121,5 +121,5 @@
     "url": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git"
   },
   "scripts": {},
-  "version": "2.3.1"
+  "version": "2.3.3"
 }

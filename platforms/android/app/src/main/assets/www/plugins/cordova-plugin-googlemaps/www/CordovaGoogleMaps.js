@@ -29,6 +29,7 @@ function CordovaGoogleMaps(execCmd) {
 
   // True while the putHtmlElements is working.
   self.isChecking = false;
+  self.transforming = false;
 
   // True if the code requests to execute the putHtmlElements while working it.
   self.checkRequested = false;
@@ -50,7 +51,7 @@ function CordovaGoogleMaps(execCmd) {
       // Since Android 4.4 passes mutations as "Object", not "Array",
       // use "for" statement instead of "forEach" method.
 
-      var i, mutation, node, j, elemId;
+      var i, mutation, node, j, elemId, doTraceTree = true;
       for (j = 0; j < mutations.length; j++) {
         mutation = mutations[j];
         targetCnt = 0;
@@ -81,20 +82,26 @@ function CordovaGoogleMaps(execCmd) {
           // Some attributes are changed.
           // If the element has __pluginDomId, check it.
           if (mutation.target.nodeType !== Node.ELEMENT_NODE) {
-            return;
+            continue;
           }
           if (mutation.target.hasAttribute("__pluginDomId")) {
-            self.traceDomTree.call(self, mutation.target, mutation.target.getAttribute("__pluginDomId"), false);
+            elemId = mutation.target.getAttribute("__pluginDomId");
             var transformCSS = common.getStyle(mutation.target, "transform") || common.getStyle(mutation.target, "-webkit-transform");
             if (transformCSS !== "none") {
-              cordova.fireDocumentEvent("transitionstart", mutation.target);
+              mutation.target.dispatchEvent(common.createEvent("transitionstart"));
+
+              // Omit executing the putHtmlElements() at this time,
+              // because it is executed at `transitionend`.
+              doTraceTree = false;
             }
           }
         }
 
       }
-      self.isThereAnyChange = true;
-      common.nextTick(self.putHtmlElements.bind(self));
+      if (doTraceTree) {
+        self.isThereAnyChange = true;
+        common.nextTick(self.putHtmlElements.bind(self));
+      }
     });
   });
   observer.observe(document.body.parentElement, {
@@ -213,7 +220,7 @@ CordovaGoogleMaps.prototype.putHtmlElements = function() {
 
   // If this process is working, just checkRequested = true.
   // The putHtmlElements will execute itself if the flag is true.
-  if (self.isChecking) {
+  if (self.isChecking || self.transforming) {
     self.checkRequested = true;
     return;
   }
@@ -262,7 +269,7 @@ CordovaGoogleMaps.prototype.putHtmlElements = function() {
   // If there is another check request,
   // DOM tree might be changed.
   // So let's start again.
-  if (self.checkRequested) {
+  if (self.checkRequested || self.transforming) {
     setTimeout(function() {
       self.isChecking = false;
       common.nextTick(self.putHtmlElements.bind(self));
@@ -315,7 +322,7 @@ CordovaGoogleMaps.prototype.putHtmlElements = function() {
 
   });
 
-  if (stopFlag) {
+  if (stopFlag || self.transforming) {
     // There is no map information (maybe timining?),
     // or the another check request is waiting,
     // start again.

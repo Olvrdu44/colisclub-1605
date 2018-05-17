@@ -1,4 +1,4 @@
-# Cordova GoogleMaps plugin for iOS and Android (version 2.3.1)
+# Cordova GoogleMaps plugin for iOS and Android (version 2.3.3)
 
 This plugin is a thin wrapper for [Google Maps Android API](https://developers.google.com/maps/documentation/android/) and [Google Maps SDK for iOS](https://developers.google.com/maps/documentation/ios/).
 
@@ -10,7 +10,7 @@ Both [PhoneGap](http://phonegap.com/) and [Apache Cordova](http://cordova.apache
 
 *Stable version(npm)*
 ```
-$> cordova plugin add cordova-plugin-googlemaps@2.3.1 \
+$> cordova plugin add cordova-plugin-googlemaps@2.3.3 \
     --variable API_KEY_FOR_ANDROID="..." \
     --variable API_KEY_FOR_IOS="..."
 
@@ -40,7 +40,7 @@ $> cordova plugin add cordova-plugin-googlemaps@2.3.1 \
 
 ```xml
 <widget ...>
-  <plugin name="cordova-plugin-googlemaps" spec="^2.3.1">
+  <plugin name="cordova-plugin-googlemaps" spec="^2.3.3">
     <variable name="API_KEY_FOR_ANDROID" value="(api key)" />
     <variable name="API_KEY_FOR_IOS" value="(api key)" />
 
@@ -62,6 +62,16 @@ $> cordova plugin add cordova-plugin-googlemaps@2.3.1 \
 ---
 
 ## Release Notes
+
+  - **v2.3.3**
+    - Comment out debug code (only this)
+
+  - **v2.3.2**
+    - Update: reduce the number of times of DOM tree parse process. (= improve performance.)
+    - Fix: `map.getMyLocation()` and `LocationService.getMyLocation()` do not work.
+    - Fix: can not execute any methods of the marker obtained from `MARKER_CLICK` event of marker cluster
+    - Fix: can not touch Div element which is moved with `css transition` over map view.
+    - Fix: internal event does not work well with ionic 1 project.
 
   - **v2.3.1**
     - Fix: incompatible with `@ionic-native/google-maps`
@@ -100,7 +110,7 @@ document.addEventListener("deviceready", function() {
     // Add a maker
     var marker = map.addMarker({
       position: {lat: 37.422359, lng: -122.084344},
-      title: "Welecome to \n" +
+      title: "Welcome to \n" +
              "Cordova GoogleMaps plugin for iOS and Android",
       snippet: "This plugin is awesome!",
       animation: plugin.google.maps.Animation.BOUNCE
@@ -353,7 +363,7 @@ You can write your code `similar to` the Google Maps JavaScript API v3.
 | (not available)                   | MarkerCluster                         |
 | google.maps.KmlLayer              | KMLLayer                              |
 | (not available)                   | LocationService                       |
-| google.maps.StreetView            | StreetView                            |
+| google.maps.StreetView            | StreetView :sparkles:                 |
 | google.maps.Data                  | (not available)                       |
 | google.maps.DirectionsService     | (not available)                       |
 | google.maps.DistanceMatrixService | (not available)                       |

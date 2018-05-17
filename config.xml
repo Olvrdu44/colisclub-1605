@@ -55,7 +55,15 @@
         <splash height="480" platform="ios" src="res/screen/ios/screen-iphone-portrait.png" width="320" />
         <splash height="320" platform="ios" src="res/screen/ios/screen-iphone-landscape.png" width="480" />
     </platform>
-    <engine name="ios" spec="~4.5.4" />
     <preference name="phonegap-version" value="cli-8.0.0" />
-    <engine name="android" spec="~7.0.0" />
+    <engine name="ios" spec="^4.5.4" />
+    <engine name="android" spec="^7.0.0" />
+	<plugin name="cordova-plugin-googlemaps" spec="^2.2.9">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDI9IqV1J3MutLrIUU4g6TACjyxzLllUb8" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyDI9IqV1J3MutLrIUU4g6TACjyxzLllUb8" />
+        <variable name="PLAY_SERVICES_VERSION" value="15.0.1" />
+        <variable name="ANDROID_SUPPORT_V4_VERSION" value="24.1.0" />
+        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="L'application colis club a besoin d'acceder au gps afin de vous geolocaliser et de vous proposer les courses autour de vous" />
+        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="L'application colis club a besoin d'acceder au gps afin de vous geolocaliser et de vous proposer les courses autour de vous !" />
+    </plugin>
 </widget>
